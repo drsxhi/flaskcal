@@ -8,7 +8,7 @@ def home():
 
 @app.route("/calendar")
 def calendar():
-    return "Here's what you have scheduled!"
+    return render_template("calendar.html")
     
 if __name__ == "__main__":
     app.run(debug=True)
